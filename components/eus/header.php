@@ -23,18 +23,11 @@
   <body>
     <div class="header">
       <div class="header__grid">
-        <div class="header__title"><a class="header__title__link" <?php echo 'href="index.php?language=' . $language . '"'; ?>><img class="header__img" src="img/meltdown-logos/meltdown-white.png" alt=""></a></div>
+        <div class="header__title"><a class="header__title__link" <?php echo 'href="index.php?language=' . $language . '"'; ?>><img class="header__img" src="img/logo.png" alt=""></a></div>
         <nav class="header__menu" id="header__mymenu">
           <a class="header__menu__responsive" href="javascript:void(0);" onclick="menuResponsive()"><?php require('imports/svg/menu.svg'); ?></a>
           <a class="header__menu__link header__menu__link--languages active" href="?language=es">ESP</a>
-          <a class="header__menu__link header__menu__link--languages active" href="?language=eng">ENG</a>
           <a class="header__menu__link header__menu__link--languages active" href="?language=eus">EUS</a>
-          <a class="header__menu__link active" <?php echo 'href="store.php?language=' . $language . '"'; ?>>DENDA</a>
-          <a class="header__menu__link active" <?php echo 'href="videos.php?language=' . $language . '"'; ?>>BIDEOAK</a>
-          <a class="header__menu__link active" <?php echo 'href="music.php?language=' . $language . '"'; ?>>MUSIKA</a>
-          <a class="header__menu__link active" <?php echo 'href="shows.php?language=' . $language . '"'; ?>>KONTZERTUAK</a>
-          <a class="header__menu__link active" <?php echo 'href="about.php?language=' . $language . '"'; ?>>INFO</a>
-          <a class="header__menu__link active" <?php echo 'href="contact.php?language=' . $language . '"'; ?>>KONTAKTUA</a>  
         </nav>
       </div>
     </div>  
