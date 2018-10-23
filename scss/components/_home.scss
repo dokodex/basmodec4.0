@@ -1,0 +1,100 @@
+$home-max-width:$grid;
+$home-font-family:$font-family-sathu;
+$home-tilte-font-color:black;
+$home-font-color:$color-gray-content;
+$home-icon--arrow-down:$color-gray-content;
+
+.home{
+  background: url('../img/hero.jpg') no-repeat;
+  background-size: cover;
+  color:$home-font-color;
+  height: 100vh;
+  font-family: $home-font-family;
+  display:none;
+  max-width: 100vw;
+  position: relative;
+  text-align: center;
+  z-index: 5;
+}
+
+.home__grid{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50% 30% 20%;
+}
+
+.home__img{
+  padding-top: 15rem;
+  height: 7rem;
+}
+
+.home__title{
+  color: $home-tilte-font-color;
+  font-size: 2.2rem;
+  opacity: .7
+}
+
+.home__languages{
+  font-size: 2rem;
+  padding: 1rem;
+  position: absolute;
+  left: 0px;
+}
+
+.home__languages__link{
+  color:$home-font-color;
+  text-decoration:none;
+  transition: opacity .2s;
+}
+
+.home__languages__link:hover{
+  opacity: .5;
+}
+
+.home__rrss{
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+.home__rrss__link{
+  text-decoration:none;
+  transition: opacity .2s;
+  padding: 0 1.5rem 0 0;
+}
+
+.home__rrss__link:hover{
+  opacity: .5;
+}
+
+.home__rrss .icon{
+  height: 1.8rem;
+}
+
+.icon--down-arrow{
+  height: 5rem;
+  opacity: 0;
+
+ animation: scaleIn 1s infinite cubic-bezier(.36, .11, .89, .32);
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media #{$breakpoints-medium} {
+
+}
+
+@media #{$breakpoints-large} {
+
+}
+
+@media #{$breakpoints-xlarge} {
+
+}
