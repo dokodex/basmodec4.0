@@ -1,6 +1,7 @@
 $body-font-family:$font-family-sathu;
+$title-font-color:$color-lila-basmo;
 $header-max-width: $grid;
-$header-background-color:$color-orange-basmo;
+$header-background-color:$color-lila-basmo;
 $header-title-font-family:$font-family-montserrat;
 $header-menu-backgorund-color:$color-white;
 $header-menu-font-family:$font-family-montserrat;
@@ -22,6 +23,16 @@ body{
   justify-content: center;
   align-content: center;
   flex-direction: column
+}
+
+.section{
+  margin: auto;
+}
+
+.title{
+  color: $title-font-color;
+  fill: $title-font-color;
+  margin: 5rem 0 5rem 0;
 }
 
 .header{
