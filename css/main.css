@@ -34,9 +34,17 @@ body {
   align-content: center;
   flex-direction: column; }
 
+.section {
+  margin: auto; }
+
+.title {
+  color: #803490;
+  fill: #803490;
+  margin: 5rem 0 5rem 0; }
+
 .header {
   align-items: center;
-  background-color: #FFA500;
+  background-color: #803490;
   height: 30rem;
   max-width: 100vw;
   margin: auto;
@@ -227,6 +235,7 @@ body {
 
 .home {
   background: url("../img/hero.jpg") no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   color: #656262;
   height: 100vh;
@@ -291,3 +300,96 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.puntos-venta {
+  font-family: "Montserrat Bold", sans-serif;
+  max-width: 900px;
+  position: relative; }
+
+.puntos-venta__title {
+  font-family: "Bebas", sans-serif;
+  font-size: 15.9vw;
+  text-align: center; }
+
+.puntos-venta__puntos-venta {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+.puntos-venta__punto-venta {
+  flex: 0 1 calc(100%);
+  padding-bottom: 5rem; }
+
+.puntos-venta__punto-venta__grid {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%; }
+
+.puntos-venta__hover {
+  position: relative;
+  overflow: hidden; }
+
+.puntos-venta__hover:hover .puntos-venta__maps {
+  opacity: 1; }
+
+.puntos-venta__hover:hover .puntos-venta__maps .icon--maps {
+  margin-top: -10rem;
+  transform: scale(0.3); }
+
+.puntos-venta__hover:hover .puntos-venta__img {
+  transform: scale(1.2); }
+
+.puntos-venta__maps {
+  background-color: rgba(128, 52, 144, 0.64);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: all .3s;
+  opacity: 0;
+  z-index: 15; }
+
+.puntos-venta__maps .icon--maps {
+  fill: white;
+  transform: scale(4);
+  margin: auto;
+  transition: all .3s; }
+
+.puntos-venta__img {
+  height: 100%;
+  transition: all .3s;
+  width: 100%;
+  z-index: 10; }
+
+.puntos-venta__tienda {
+  color: #FFA500; }
+
+.puntos-venta__info {
+  color: #656262;
+  font-size: 2rem;
+  padding: 1rem; }
+
+.puntos-venta__info .icon {
+  height: 2rem; }
+
+@media only screen and (min-width: 1024px) {
+  .puntos-venta__title {
+    font-size: 5rem; }
+  .puntos-venta__punto-venta {
+    flex: 0 1 calc(100%/2); }
+  .puntos-venta__punto-venta__grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%; }
+  .puntos-venta__hover:hover .puntos-venta__maps .icon--maps {
+    margin-top: -2rem;
+    transform: scale(0.3); }
+  .puntos-venta__info {
+    color: #656262;
+    font-size: .8rem;
+    padding: 0rem;
+    padding-left: .5rem; }
+  .puntos-venta__info div {
+    padding-top: .3rem; }
+  .puntos-venta__info .icon {
+    height: 1rem; } }
