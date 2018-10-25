@@ -465,3 +465,29 @@ body {
 
 .noticias__noticia__text__tab {
   padding-left: 1rem; }
+
+.brikolatu {
+  max-width: 900px;
+  position: relative;
+  z-index: 5; }
+
+.brikolatu__grid {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+  text-align: center; }
+
+.brikolatu__img {
+  width: 30rem;
+  transition: opacity .3s; }
+
+.brikolatu__img:hover {
+  opacity: .6; }
+
+.brikolatu__maps {
+  padding: 5rem; }
+
+@media only screen and (min-width: 1024px) {
+  .brikolatu__grid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%; } }
