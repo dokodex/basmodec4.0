@@ -29,9 +29,16 @@
   src: url('../imports/typography/Sathu.ttf');
 }
 
+@font-face{
+  font-family: 'French';
+  font-style: normal;
+  src: url('../imports/typography/french.ttf');
+}
+
 
 $font-family-montserrat: 'Montserrat Bold', sans-serif;
 $font-family-montserrat-regular: 'Montserrat Thin', sans-serif;
 $font-family-bebas: 'Bebas', sans-serif;
 $font-family-wensley: 'Wensley', sans-serif;
 $font-family-sathu: 'Sathu', sans-serif;
+$font-family-french: 'French', sans-serif;
