@@ -1,7 +1,10 @@
 $footer-max-width:$grid;
+$footer-background-color:$color-orange-basmo;
+$footer-rrss-icon-color:$color-lila-basmo;
+$footer-nuestras-marcas-color:$color-lila-basmo;
 
 .footer{
-  background: black;
+  background: $footer-background-color;
   margin: auto;
   max-width: 100vw;
   min-height: 100px;
@@ -9,22 +12,11 @@ $footer-max-width:$grid;
   z-index: 15;
 }
 
-.footer__flex{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  text-align: center;
-  padding: 0 2rem 0 2rem;
+.footer__grid{
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 
-.footer__flex__box{
-  flex: 0 1 100%;
-}
-
-.footer__flex .footer__flex__box{
-  padding: 20px 0 0 0;
-  margin-bottom: 2rem;
-}
 
 .footer__info{
   color: $color-white;
@@ -45,10 +37,14 @@ $footer-max-width:$grid;
 }
 
 .footer__sponsors{
+  display: grid;
+  grid-template-columns: 50% 50%;
   margin-top: 1rem;
   text-align: center;
 }
 
+.footer__sponsors__div{
+}
 
 .footer__sponsors__img{
   width: 4.5rem;
@@ -60,12 +56,15 @@ $footer-max-width:$grid;
   opacity: .6;
 }
 
-.footer__sponsors__img--hxc{
-  width: 2.5rem;
+.footer__sponsors__link--nuestrasmarcas{
+  color: $footer-nuestras-marcas-color;
+  margin-top: -2px;
+  text-decoration: none;
+  transition: opacity .3s;
 }
 
-.footer__sponsors__img--trscndntl{
-
+.footer__sponsors__link--nuestrasmarcas:hover{
+  opacity: .6;
 }
 
 .footer__rrss{
@@ -83,7 +82,7 @@ $footer-max-width:$grid;
 }
 
 .footer__rrss__link .icon{
-  fill: $color-gray-content;
+  fill: $footer-rrss-icon-color;
   height: 4rem;
   padding: 0 1rem 0 0;
 }
@@ -94,24 +93,19 @@ $footer-max-width:$grid;
 }
 
 @media #{$breakpoints-large} {
-  .footer__flex{
-    text-align: left;
-  }
 
-  .footer__flex__box{
-    flex: 0 1 calc(100%/3);
+  .footer__grid{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    text-align: center;
   }
 
   .footer__info{
     text-align: left;
   }
-
   .footer__text{
-    font-size:1rem;
-  }
-
-  .footer__sponsors{
-    text-align: center;
+    margin-left: 1rem;
+    font-size: 1rem;
   }
 
   .footer__rrss{
