@@ -26,6 +26,10 @@ $brikolatu-max-width:$grid-content;
   padding: 5rem;
 }
 
+.brikolatu__maps__iframe{
+  margin-bottom: 5rem;
+}
+
 @media #{$breakpoints-medium} {
 
 }
@@ -35,6 +39,10 @@ $brikolatu-max-width:$grid-content;
   .brikolatu__grid{
     grid-template-columns:50% 50%;
     grid-template-rows:100%;
+  }
+
+  .brikolatu__maps__iframe{
+    margin-bottom: 0rem;
   }
 
 }
