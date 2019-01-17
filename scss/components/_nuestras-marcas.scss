@@ -1,0 +1,89 @@
+$nuestras-marcas-max-width:$grid;
+$nuestras-marcas-tilte-font-family:$font-family-bebas;
+$nuestras-marcas-marca-background-color:$color-white;
+$nuestras-marcas-marca-font-family:$font-family-montserrat-regular;
+$nuestras-marcas-description-background-color:$color-orange-basmo;
+$note-font-family:$font-family-montserrat-regular;
+$nuestras-marcas-marca-font-color:$color-gray-content;
+
+.nuestras-marcas{
+  margin: auto;
+  max-width:$nuestras-marcas-max-width; 
+  position: relative;
+  z-index: 5;
+}
+
+.nuestras-marcas__title{
+
+}
+
+.nuestras-marcas__marcas{
+  display: flex;
+  flex-flow:column wrap;
+  justify-content: space-between;
+  margin-bottom:5rem;
+}
+
+.nuestras-marcas__marca{
+  font-family: $nuestras-marcas-marca-font-family;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.nuestras-marcas__img{
+  width: 20rem;
+}
+
+.nuestras-marcas__description{
+  background-color: $nuestras-marcas-description-background-color;
+  color: $color-white;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: opacity .2s;
+  opacity: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.nuestras-marcas__description:hover{
+  opacity: 1;
+}
+
+.nuestras-marcas__note{
+  border: 3px black solid;
+  font-family: $note-font-family;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media #{$breakpoints-medium} {
+
+}
+
+@media #{$breakpoints-large} {
+
+  .nuestras-marcas__title{
+
+  }
+
+  .nuestras-marcas__marcas {
+    flex-flow:row wrap;
+  }
+
+  .nuestras-marcas__marca{
+    flex: 0 1 calc(100%/4);
+    overflow: initial;
+  }
+
+  .nuestras-marcas__img{
+    width: 70%;
+  }
+}
+
+@media #{$breakpoints-xlarge} {
+
+}

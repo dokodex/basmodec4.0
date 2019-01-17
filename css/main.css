@@ -29,7 +29,7 @@
   src: url("../imports/typography/french.ttf"); }
 
 body {
-  background-color: #fbfbfb;
+  background-color: white;
   font-family: "Sathu", sans-serif;
   margin: 0; }
 
@@ -42,10 +42,17 @@ body {
 .section {
   margin: auto; }
 
+.content {
+  margin: auto; }
+
 .title {
   color: #803490;
   fill: #803490;
-  margin: 5rem 0 5rem 0; }
+  font-family: "Montserrat Thin", sans-serif;
+  font-size: 3rem;
+  margin-top: 0rem;
+  padding-top: 5rem;
+  text-align: center; }
 
 .header {
   align-items: center;
@@ -158,7 +165,7 @@ body {
   background: #FFA500;
   margin: auto;
   max-width: 100vw;
-  min-height: 100px;
+  min-height: 80px;
   position: relative;
   z-index: 15; }
 
@@ -168,7 +175,7 @@ body {
 
 .footer__info {
   color: white;
-  font-family: "Bebas", sans-serif;
+  font-family: "Montserrat Thin", sans-serif;
   font-weight: normal;
   margin-top: .8rem;
   text-align: center;
@@ -260,9 +267,9 @@ body {
   height: 7rem; }
 
 .home__title {
-  color: black;
-  font-size: 2.2rem;
-  opacity: .7; }
+  color: white;
+  font-family: "Montserrat Thin", sans-serif;
+  font-size: 2.2rem; }
 
 .home__languages {
   font-size: 2rem;
@@ -306,14 +313,15 @@ body {
     opacity: 1; } }
 
 .puntos-venta {
-  font-family: "Montserrat Bold", sans-serif;
+  background-image: linear-gradient(349deg, white 40%, #FFA500 40%) !important;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw; }
+
+.puntos-venta__content {
+  font-family: "Montserrat Thin", sans-serif;
   max-width: 900px;
   position: relative; }
-
-.puntos-venta__title {
-  font-family: "Bebas", sans-serif;
-  font-size: 15.9vw;
-  text-align: center; }
 
 .puntos-venta__puntos-venta {
   display: flex;
@@ -321,8 +329,11 @@ body {
   justify-content: space-between; }
 
 .puntos-venta__punto-venta {
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
   flex: 0 1 calc(100%);
-  padding-bottom: 5rem; }
+  margin: 0 8rem 0 8rem;
+  margin-bottom: 5rem; }
 
 .puntos-venta__punto-venta__grid {
   display: grid;
@@ -330,14 +341,18 @@ body {
   grid-template-columns: 100%; }
 
 .puntos-venta__hover {
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 2rem;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 200px; }
 
 .puntos-venta__hover:hover .puntos-venta__maps {
   opacity: 1; }
 
 .puntos-venta__hover:hover .puntos-venta__maps .icon--maps {
-  margin-top: -10rem;
   transform: scale(0.3); }
 
 .puntos-venta__hover:hover .puntos-venta__img {
@@ -356,13 +371,12 @@ body {
 .puntos-venta__maps .icon--maps {
   fill: white;
   transform: scale(4);
-  margin: auto;
   transition: all .3s; }
 
 .puntos-venta__img {
   height: 100%;
   transition: all .3s;
-  width: 100%;
+  position: absolute;
   z-index: 10; }
 
 .puntos-venta__tienda {
@@ -370,27 +384,32 @@ body {
 
 .puntos-venta__info {
   color: #656262;
-  font-size: 2rem;
+  font-size: 1rem;
+  margin: 1rem;
+  text-align: center;
   padding: 1rem; }
 
 .puntos-venta__info .icon {
-  height: 2rem; }
+  height: 1rem; }
 
 @media only screen and (min-width: 1024px) {
-  .puntos-venta__title {
-    font-size: 5rem; }
   .puntos-venta__punto-venta {
-    flex: 0 1 calc(100%/2); }
+    margin: 3rem; }
   .puntos-venta__punto-venta__grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 100%; }
+  .puntos-venta__hover {
+    margin-top: 0rem;
+    margin: 3rem; }
   .puntos-venta__hover:hover .puntos-venta__maps .icon--maps {
     margin-top: -2rem;
     transform: scale(0.3); }
   .puntos-venta__info {
     color: #656262;
     font-size: .8rem;
+    margin: 3rem;
+    text-align: left;
     padding: 0rem;
     padding-left: .5rem; }
   .puntos-venta__info div {
@@ -402,17 +421,15 @@ body {
   background: url("../img/noticias/back.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: auto;
+  min-height: 100vh;
   padding-bottom: 5rem;
   position: relative;
   z-index: 5; }
 
-.puntos-venta__title {
-  padding-top: 5rem; }
-
 .noticias__noticias {
   max-width: 900px;
-  margin: auto; }
+  margin: auto;
+  padding-top: 1rem; }
 
 .noticias__noticia {
   background-color: #FFA500;
@@ -422,6 +439,7 @@ body {
   max-height: 127px;
   transform: scale(0.9);
   transition: max-height .5s;
+  margin-top: 5rem;
   width: auto; }
 
 .noticias__noticia2 {
@@ -458,7 +476,7 @@ body {
   height: 0px;
   padding: 5rem;
   text-align: justify;
-  transition: opacity 2.5s;
+  transition: opacity .2s;
   opacity: 0;
   overflow: hidden; }
 
@@ -466,6 +484,13 @@ body {
   padding-left: 1rem; }
 
 .brikolatu {
+  background-image: linear-gradient(349deg, white 40%, #803490 40%) !important;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw; }
+
+.brikolatu__content {
+  margin: auto;
   max-width: 900px;
   position: relative;
   z-index: 5; }
@@ -477,21 +502,92 @@ body {
   text-align: center; }
 
 .brikolatu__img {
-  width: 30rem;
+  padding-top: 5rem;
+  width: 20rem;
   transition: opacity .3s; }
 
 .brikolatu__img:hover {
   opacity: .6; }
 
-.brikolatu__maps {
-  padding: 5rem; }
+.brikolatu__info {
+  color: white;
+  font-family: "Montserrat Thin", sans-serif;
+  padding-top: 2rem; }
+
+.brikolatu__divmaps {
+  text-align: center; }
+
+.brikolatu__div__circle {
+  border-radius: 50%;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  padding: 5rem;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 5rem;
+  width: 100px; }
 
 .brikolatu__maps__iframe {
-  margin-bottom: 5rem; }
+  position: absolute;
+  left: -80px;
+  top: -50px; }
 
 @media only screen and (min-width: 1024px) {
   .brikolatu__grid {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%; }
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%; }
   .brikolatu__maps__iframe {
     margin-bottom: 0rem; } }
+
+.nuestras-marcas {
+  margin: auto;
+  max-width: 1280px;
+  position: relative;
+  z-index: 5; }
+
+.nuestras-marcas__marcas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin-bottom: 5rem; }
+
+.nuestras-marcas__marca {
+  font-family: "Montserrat Thin", sans-serif;
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+
+.nuestras-marcas__img {
+  width: 20rem; }
+
+.nuestras-marcas__description {
+  background-color: #FFA500;
+  color: white;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: opacity .2s;
+  opacity: 0;
+  z-index: 10;
+  width: 100%; }
+
+.nuestras-marcas__description:hover {
+  opacity: 1; }
+
+.nuestras-marcas__note {
+  border: 3px black solid;
+  font-family: "Montserrat Thin", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  text-align: center; }
+
+@media only screen and (min-width: 1024px) {
+  .nuestras-marcas__marcas {
+    flex-flow: row wrap; }
+  .nuestras-marcas__marca {
+    flex: 0 1 calc(100%/4);
+    overflow: initial; }
+  .nuestras-marcas__img {
+    width: 70%; } }

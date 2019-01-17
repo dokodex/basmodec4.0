@@ -1,5 +1,5 @@
 <section class="section noticias">
-  <div class="puntos-venta__title title">IDEIAK & ALBISTEAK</div>
+  <h1 class="noticias__title title">Ideiak & albisteak</h1>
   <div class="noticias__noticias">    
     <div class="noticias__noticia">
       <div class="noticias__noticia__grid">

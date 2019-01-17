@@ -1,6 +1,6 @@
 $home-max-width:$grid;
 $home-font-family:$font-family-sathu;
-$home-tilte-font-color:black;
+$home-tilte-font-color:white;
 $home-font-color:$color-gray-content;
 $home-icon--arrow-down:$color-gray-content;
 
@@ -31,8 +31,8 @@ $home-icon--arrow-down:$color-gray-content;
 
 .home__title{
   color: $home-tilte-font-color;
+  font-family: $font-family-montserrat-regular;
   font-size: 2.2rem;
-  opacity: .7
 }
 
 .home__languages{

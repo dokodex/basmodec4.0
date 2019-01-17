@@ -1,5 +1,6 @@
 $footer-max-width:$grid;
 $footer-background-color:$color-orange-basmo;
+$footer-info-font-family:$font-family-montserrat-regular;
 $footer-rrss-icon-color:$color-lila-basmo;
 $footer-nuestras-marcas-color:$color-lila-basmo;
 
@@ -7,7 +8,7 @@ $footer-nuestras-marcas-color:$color-lila-basmo;
   background: $footer-background-color;
   margin: auto;
   max-width: 100vw;
-  min-height: 100px;
+  min-height: 80px;
   position: relative;
   z-index: 15;
 }
@@ -20,7 +21,7 @@ $footer-nuestras-marcas-color:$color-lila-basmo;
 
 .footer__info{
   color: $color-white;
-  font-family: $font-family-bebas;
+  font-family: $footer-info-font-family;
   font-weight: normal;
   margin-top: .8rem;
   text-align: center;

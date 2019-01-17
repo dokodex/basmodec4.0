@@ -21,7 +21,7 @@
   <div class="home__grid">
     <div><img class="home__img" src="img/logo.png" alt=""/></div>
     <div class="home__info">
-      <h1 class="home__title">ZURE PINTURA DENDA</h1>
+      <h1 class="home__title">Zure pintura denda</h1>
     </div>
     <div><?php require('imports/svg/down-arrow.svg') ?></div>
   </div>
