@@ -1,9 +1,19 @@
-$brikolatu-max-width:$grid-content;
+$brikolatu-content-max-width:$grid-content;
+$brokolatu-info-font-color:white;
+$brokolatu-info-font-family:$font-family-montserrat-regular;
 
 .brikolatu{
-  max-width: $brikolatu-max-width;
+  background-image: linear-gradient(349deg,white 40%,#803490 40%)!important;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.brikolatu__content{
+  margin: auto;
+  max-width: $brikolatu-content-max-width;
   position:relative;
-  z-index: 5;
+  z-index: 5; 
 }
 
 .brikolatu__grid{
@@ -14,7 +24,8 @@ $brikolatu-max-width:$grid-content;
 }
 
 .brikolatu__img{
-  width: 30rem;
+  padding-top: 5rem;
+  width: 20rem;
   transition: opacity .3s;
 }
 
@@ -22,12 +33,32 @@ $brikolatu-max-width:$grid-content;
   opacity: .6;
 }
 
-.brikolatu__maps{
+.brikolatu__info{  
+  color:$brokolatu-info-font-color;
+  font-family: $brokolatu-info-font-family;
+  padding-top: 2rem;
+}
+
+.brikolatu__divmaps{
+  text-align: center;
+}
+
+.brikolatu__div__circle{
+  border-radius: 50%;
+  height: 100px;
+  margin: auto;
+  position: relative;
   padding: 5rem;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 5rem;
+  width: 100px;
 }
 
 .brikolatu__maps__iframe{
-  margin-bottom: 5rem;
+  position: absolute;
+  left: -80px;
+  top: -50px;
 }
 
 @media #{$breakpoints-medium} {
@@ -37,8 +68,8 @@ $brikolatu-max-width:$grid-content;
 @media #{$breakpoints-large} {
 
   .brikolatu__grid{
-    grid-template-columns:50% 50%;
-    grid-template-rows:100%;
+    grid-template-rows:50% 50%;
+    grid-template-columns:100%;
   }
 
   .brikolatu__maps__iframe{

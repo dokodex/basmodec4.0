@@ -1,5 +1,6 @@
 $body-font-family:$font-family-sathu;
 $title-font-color:$color-lila-basmo;
+$title-font-family:$font-family-montserrat-regular; 
 $header-max-width: $grid;
 $header-background-color:$color-lila-basmo;
 $header-title-font-family:$font-family-montserrat;
@@ -13,7 +14,7 @@ $icon-menu-color:$color-white;
 $icon-menu-color1:$color-black;
 
 body{
-  background-color:$color-white-dirty;
+  background-color:white;
   font-family: $body-font-family;
   margin: 0;
 }
@@ -29,10 +30,18 @@ body{
   margin: auto;
 }
 
+.content{
+  margin: auto;
+}
+
 .title{
   color: $title-font-color;
   fill: $title-font-color;
-  margin: 5rem 0 5rem 0;
+  font-family: $title-font-family;
+  font-size: 3rem;
+  margin-top: 0rem;
+  padding-top: 5rem;
+  text-align: center;
 }
 
 .header{

@@ -9,32 +9,30 @@ $noticia-font-color:$color-white;
   background: url('../img/noticias/back.jpg') no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: auto;
+  min-height: 100vh;
   padding-bottom: 5rem;
   position: relative;
   z-index: 5;
 }
 
-.puntos-venta__title{
-  padding-top: 5rem;
-}
-
 .noticias__noticias{
-
   max-width: $noticias-noticias-max-width;
   margin: auto;
+  padding-top: 1rem;
 }
 
 .noticias__noticia{
   background-color: $noticia-background-color;
-  border-radius: 10px 10px 10px 10px;;
+  border-radius: 10px 10px 10px 10px;
   color: $noticia-font-color;
   font-family: $noticia-font-family;
   max-height: 127px;
   transform: scale(.9);
   transition: max-height .5s;
+  margin-top: 5rem;
   width: auto;
 }
+
 
 .noticias__noticia2{
   background-color: $noticia-background-color2;
@@ -79,7 +77,7 @@ $noticia-font-color:$color-white;
   height: 0px;
   padding: 5rem;
   text-align: justify;
-  transition: opacity 2.5s;
+  transition: opacity .2s;
   opacity: 0;
   overflow: hidden;
 }
