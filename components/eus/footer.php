@@ -5,7 +5,6 @@
       </div>
       <div class="footer__sponsors">
         <a href="http://brikolatu.com/" target="_blank" class="footer__sponsors__link footer__sponsors__link--brikolatu"><img class="footer__sponsors__img" src="img/brikolatu/brikolatu.png" alt=""/></a>
-        <a href="https://www.facebook.com/atlasartistagency/?ref=br_rs" target="_blank" class="footer__sponsors__link footer__sponsors__link--nuestrasmarcas"><img class="footer__sponsors__img" src="img/footer/nuestras-marcas.png" alt=""/></a>
       </div>
       <div class="footer__rrss">
         <a class="footer__rrss__link footer__rrss__link--facebook" href="https://www.facebook.com/meltdowntaldea/" target="_blank"><?php require('imports/svg/facebook.svg') ?></a>
